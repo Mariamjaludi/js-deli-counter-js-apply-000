@@ -1,8 +1,8 @@
-function takeANumber(currentLine, newCustomer){
-  var temp = currentLine.push(newCustomer);
-  var index = temp.length;
-  var welcome = `Welcome, ${newCustomer}. You are number ${index} in line.`;
-  return welcome;
+function takeANumber(currentLine, name){
+  var temp = currentLine.length +1;
+    var sentence = `Welcome, ${name}. You are number ${temp} in line.`;
+    currentLine.push(name);
+    return sentence;
 }
 
 function nowServing(katzDeliLine){
