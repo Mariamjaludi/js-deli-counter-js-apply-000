@@ -1,7 +1,10 @@
+var counter = 0;
+
 function takeANumber(currentLine, name){
   var temp = currentLine.length +1;
     var sentence = `Welcome, ${name}. You are number ${temp} in line.`;
     currentLine.push(name);
+    counter++;
     return sentence;
 }
 
